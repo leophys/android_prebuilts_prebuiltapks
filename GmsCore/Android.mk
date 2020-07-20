@@ -13,13 +13,13 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := GmsCore
-LOCAL_SRC_FILES := play-services-core-release.apk
+LOCAL_SRC_FILES := play-services-core-mapbox-release.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
 LOCAL_OVERRIDES_PACKAGES := com.qualcomm.location
-LOCAL_REQUIRED_MODULES := privapp-permissions-com.google.android.gms.xml
+LOCAL_REQUIRED_MODULES := privapp-permissions-org.microG.xml
 include $(BUILD_PREBUILT)
 
 endif
